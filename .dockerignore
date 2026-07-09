@@ -1,0 +1,22 @@
+# Virtual Environment
+myenv/
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Training checkpoints
+results/
+
+# Hugging Face cache
+.cache/
+
+# Large model files
+model/
+*.safetensors
+
+# Environment files
+.env
