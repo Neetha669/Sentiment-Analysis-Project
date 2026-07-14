@@ -1,10 +1,12 @@
 fastapi
 uvicorn
 torch
-transformers
+transformers==4.46.3
 datasets
 pandas
 scikit-learn
 python-multipart
-boto3
 accelerate
+mlflow
+matplotlib
+safetensors
