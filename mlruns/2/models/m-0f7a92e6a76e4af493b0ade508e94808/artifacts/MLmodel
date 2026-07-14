@@ -1,0 +1,35 @@
+artifact_path: file:D:/4AL23CD029/sentiment_analysis/mlruns/2/models/m-0f7a92e6a76e4af493b0ade508e94808/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.transformers
+    python_version: 3.12.7
+  transformers:
+    code: null
+    components:
+    - tokenizer
+    framework: pt
+    instance_type: TextClassificationPipeline
+    model_binary: model
+    pipeline_model_type: BertForSequenceClassification
+    source_model_name: prajjwal1/bert-tiny
+    task: text-classification
+    tokenizer_type: BertTokenizerFast
+    torch_dtype: torch.float32
+    transformers_version: 4.46.3
+is_signature_from_type_hint: false
+mlflow_version: 3.14.0
+model_id: m-0f7a92e6a76e4af493b0ade508e94808
+model_size_bytes: 18498208
+model_uuid: m-0f7a92e6a76e4af493b0ade508e94808
+prompts: null
+run_id: d453dbcfebd846699551cae1eb813637
+signature:
+  inputs: '[{"type": "string", "required": true}]'
+  outputs: '[{"type": "string", "name": "label", "required": true}, {"type": "double",
+    "name": "score", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-07-14 04:15:46.689479'

@@ -1,0 +1,10 @@
+language:
+- en
+license:
+- mit
+tags:
+- BERT
+- MNLI
+- NLI
+- transformer
+- pre-training
