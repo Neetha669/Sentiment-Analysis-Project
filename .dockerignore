@@ -14,9 +14,5 @@ results/
 # Hugging Face cache
 .cache/
 
-# Large model files
-model/
-*.safetensors
-
 # Environment files
 .env
