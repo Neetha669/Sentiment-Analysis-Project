@@ -1,0 +1,35 @@
+artifact_path: file:D:/4AL23CD029/sentiment_analysis/mlruns/1/models/m-e2d61be93b5547beb6d5966144eb1406/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.transformers
+    python_version: 3.12.7
+  transformers:
+    code: null
+    components:
+    - tokenizer
+    framework: pt
+    instance_type: TextClassificationPipeline
+    model_binary: model
+    pipeline_model_type: DistilBertForSequenceClassification
+    source_model_name: distilbert-base-uncased
+    task: text-classification
+    tokenizer_type: DistilBertTokenizerFast
+    torch_dtype: torch.float32
+    transformers_version: 4.46.3
+is_signature_from_type_hint: false
+mlflow_version: 3.14.0
+model_id: m-e2d61be93b5547beb6d5966144eb1406
+model_size_bytes: 268801130
+model_uuid: m-e2d61be93b5547beb6d5966144eb1406
+prompts: null
+run_id: 0b481d97fbcf40d4b8ee2ebe240f8a6b
+signature:
+  inputs: '[{"type": "string", "required": true}]'
+  outputs: '[{"type": "string", "name": "label", "required": true}, {"type": "double",
+    "name": "score", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-07-14 03:47:15.801925'

@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import mlflow
-import mlflow.transformers
+import mlflow.transformers 
 
 from datasets import Dataset
 from transformers import (
@@ -86,7 +86,6 @@ def compute_metrics(pred):
     return {
         "accuracy": accuracy
     }
-
 # Training Arguments
 
 training_args = TrainingArguments(
@@ -181,6 +180,7 @@ with mlflow.start_run():
     mlflow.log_param("Learning Rate", training_args.learning_rate)
 
     # MLflow Metrics
+
     mlflow.log_metric("Accuracy", accuracy)
     mlflow.log_metric("Eval Loss", result["eval_loss"])
 

@@ -1,25 +1,5 @@
-# Virtual Environment
 myenv/
-
-# Python cache
-__pycache__/
-*.pyc
-
-# VS Code
-.vscode/
-
-# Training checkpoints
 results/
-
-# Trained model
-model/
-
-# Hugging Face model files
-*.safetensors
-
-# Environment files
-.env
-
+__pycache__/
 mlflow.db
-mlruns/
 

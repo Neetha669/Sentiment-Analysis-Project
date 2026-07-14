@@ -1,0 +1,34 @@
+artifact_path: file:D:/4AL23CD029/sentiment_analysis/mlruns/1/models/m-ff0abb12624c41be9440744d3ef271a6/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.transformers
+    python_version: 3.12.7
+  transformers:
+    code: null
+    components:
+    - tokenizer
+    framework: pt
+    instance_type: FillMaskPipeline
+    model_binary: model
+    pipeline_model_type: DistilBertForSequenceClassification
+    source_model_name: distilbert-base-uncased
+    task: fill-mask
+    tokenizer_type: DistilBertTokenizerFast
+    torch_dtype: torch.float32
+    transformers_version: 4.46.3
+is_signature_from_type_hint: false
+mlflow_version: 3.14.0
+model_id: m-ff0abb12624c41be9440744d3ef271a6
+model_size_bytes: 268801130
+model_uuid: m-ff0abb12624c41be9440744d3ef271a6
+prompts: null
+run_id: b1df333d11814615bf34a03dded79692
+signature:
+  inputs: '[{"type": "string", "required": true}]'
+  outputs: '[{"type": "string", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-07-11 05:06:06.381411'

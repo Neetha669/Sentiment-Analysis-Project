@@ -2,9 +2,14 @@ from transformers import DistilBertTokenizerFast
 from transformers import DistilBertForSequenceClassification
 import torch
 
-tokenizer=DistilBertTokenizerFast.from_pretrained("model")
-model=DistilBertForSequenceClassification.from_pretrained("model")
+model = DistilBertForSequenceClassification.from_pretrained(
+    "distilbert-base-uncased",
+    num_labels=3
+)
 
+tokenizer = DistilBertTokenizerFast.from_pretrained(
+    "distilbert-base-uncased"
+)
 labels={
 0:"Negative",
 1:"Neutral",
