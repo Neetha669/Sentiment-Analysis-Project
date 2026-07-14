@@ -4,6 +4,16 @@ import os
 
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "model")
 
+import os
+
+print("Current Directory:", os.getcwd())
+print("Files in current directory:", os.listdir("."))
+
+print("Model exists:", os.path.exists(MODEL_PATH))
+
+if os.path.exists(MODEL_PATH):
+    print("Model files:", os.listdir(MODEL_PATH))
+    
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
